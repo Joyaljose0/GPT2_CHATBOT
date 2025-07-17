@@ -1,5 +1,5 @@
 
-# 🤖 ZETTA Chatbot with Fine-tuned GPT-2 Medium 
+#  ZETTA Chatbot with Fine-tuned GPT-2 Medium 
 
 ZETTA is a personalized chatbot powered by a fine-tuned version of OpenAI’s GPT-2 Medium model. Designed to be friendly, helpful, and memory-aware, ZETTA can remember past conversations—even after a server restart—thanks to persistent session memory stored on disk. This makes it ideal for building intelligent assistants, learning bots, and conversational agents that require context continuity.
 
@@ -7,7 +7,7 @@ Whether you're experimenting with dialogue generation or deploying your own AI a
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Fine-tuned `GPT2-medium` using custom dataset
 - Chat memory saved per user session (`session_id`)
@@ -55,7 +55,7 @@ flask-cors
 
 ---
 
-## 🧠 Fine-tuning
+##  Fine-tuning
 
 Prepare the dataset:
 
@@ -96,7 +96,7 @@ It uses `localStorage` to maintain unique session IDs for consistent chat histor
 
 ---
 
-## 🧪 Example
+##  Example
 
 You say:
 ```
