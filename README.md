@@ -1,13 +1,15 @@
 
-# 🤖 ZETTA Chatbot with Fine-tuned GPT-2 Medium (DialoGPT)
+# 🤖 ZETTA Chatbot with Fine-tuned GPT-2 Medium 
 
-ZETTA is a persistent chatbot powered by a fine-tuned DialoGPT-medium model. It maintains multi-turn conversation history across browser refreshes using `session_id` and stores memory on disk for persistent context.
+ZETTA is a personalized chatbot powered by a fine-tuned version of OpenAI’s GPT-2 Medium model. Designed to be friendly, helpful, and memory-aware, ZETTA can remember past conversations—even after a server restart—thanks to persistent session memory stored on disk. This makes it ideal for building intelligent assistants, learning bots, and conversational agents that require context continuity.
+
+Whether you're experimenting with dialogue generation or deploying your own AI assistant, ZETTA is built for developers who want flexibility, extensibility, and a clean chat interface out of the box.
 
 ---
 
 ## 🚀 Features
 
-- Fine-tuned `DialoGPT-medium` using custom dataset
+- Fine-tuned `GPT2-medium` using custom dataset
 - Chat memory saved per user session (`session_id`)
 - Memory is persistent (saved in `chat_memory.json`)
 - Frontend: modern HTML/CSS interface with automatic session handling
@@ -20,12 +22,12 @@ ZETTA is a persistent chatbot powered by a fine-tuned DialoGPT-medium model. It 
 
 ```
 ├── app.py                  # Flask backend with persistent memory
-├── finetune_gpt2.py        # Fine-tuning script (DialoGPT)
+├── finetune_gpt2.py        # Fine-tuning script (GPT2 - Medium)
 ├── prepare_dataset.py      # Format chat dataset into training format
 ├── chat_data.txt           # Original chat dataset
 ├── dialogs.txt             # Cleaned and formatted conversation pairs
 ├── formatted_dataset.txt   # Final file used for training
-├── geni_model/             # Fine-tuned DialoGPT-medium model
+├── geni_model/             # Fine-tuned GPT2-medium model
 ├── templates/
 │   └── index.html          # Frontend chat interface
 ├── static/                 # (Optional) CSS or JS if separated
